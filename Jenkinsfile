@@ -1,10 +1,10 @@
 def callAnt(String Parameters) {
     if (isUnix()) {
-        env.PATH = "${tool 'ant'}/bin;${env.PATH}"
+        env.PATH = "${tool 'Ant'}/bin;${env.PATH}"
         sh "ant ${Parameters}"
     }
     else {
-        env.PATH = "${tool 'ant'}\\bin;${env.PATH}"
+        env.PATH = "${tool 'Ant'}\\bin;${env.PATH}"
         bat "ant ${Parameters}"
     }
 }
